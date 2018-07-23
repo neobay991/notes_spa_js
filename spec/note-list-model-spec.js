@@ -7,7 +7,7 @@
     noteListModel.add(note1);
     noteListModel.add(note2);
     // console.log(noteListModel.all()[0] === note1);
-    if (noteListModel.all()[0] !== note1 && noteListModel.all()[1] !== note2){
+    if (!noteListModel.all().includes(note1) && !noteListModel.all().includes(note2)){
       throw new Error('Note does not appear in the list')
     }
   }
