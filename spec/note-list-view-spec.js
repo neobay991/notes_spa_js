@@ -4,7 +4,7 @@
     let noteList = new NoteListModel();
     noteList.add(note1);
     let view = new NoteListView(noteList);
-    let expectedHtml = '<li><div>Note 1: This is a test note.</div></li>';
+    let expectedHtml = '<div><li>Note 1: This is a test note.</li></div>';
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (single).');
     }
@@ -17,7 +17,8 @@
     noteList.add(note1);
     noteList.add(note2);
     let view = new NoteListView(noteList);
-    let expectedHtml = '<li><div>Note 1: This is a test note.</div></li><li><div>Note 2: This is a test note 2</div></li>'
+
+    let expectedHtml = '<div><li>Note 1: This is a test note.</li></div><div><li>Note 2: This is a test note 2</li></div>'
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (multiple).');
     }

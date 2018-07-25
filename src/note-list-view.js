@@ -8,7 +8,7 @@
 
 
     this._noteList.all().forEach(function(note, index){
-      output += `<li><div>Note ${index + 1}: ${note.noteText()}</div></li>`
+      output += `<div><li>Note ${index + 1}: ${note.noteText()}</li></div>`
     });
 
     return output
