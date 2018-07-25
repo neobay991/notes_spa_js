@@ -16,8 +16,9 @@
     appDiv.innerHTML = NoteController();
   }
 
-  // invoke the method 
+  // invoke the method
   NoteController.prototype.html();
+  // exports.NoteControllerHTML = NoteController.prototype.html();
 
 })();
 
