@@ -1,4 +1,4 @@
-(function(){
+(function(exports){
 
   function NoteController(noteList = new NoteListModel()){
     let note1 = new NoteModel("Favourite drink: seltzer");
@@ -16,11 +16,13 @@
     appDiv.innerHTML = NoteController();
   }
 
-  // invoke the method
+  // invoke the method to return the html
   NoteController.prototype.html();
-  // exports.NoteControllerHTML = NoteController.prototype.html();
 
-})();
+  // make the constructor public for tests
+  exports.NoteController = NoteController(noteList = new NoteListModel());
+
+})(this);
 
 // (function(){
 //   var appDiv = document.getElementById('app');
