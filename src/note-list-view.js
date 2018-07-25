@@ -6,6 +6,7 @@
   NoteListView.prototype.html = function(){
     let output = '';
 
+
     this._noteList.all().forEach(function(note, index){
       output += `<li><div>Note ${index + 1}: ${note.noteText()}</div></li>`
     });
