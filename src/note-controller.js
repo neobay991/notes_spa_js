@@ -1,9 +1,9 @@
 (function(exports){
   function NoteController(noteList){
-    var noteList = new NoteListModel()
-    let note1 = new NoteModel("Favourite drink: seltzer");
-    // let noteList = new NoteListModel();
-    noteList.add(note1);
+    // var noteList = new NoteListModel()
+    // let note1 = new NoteModel(1, "Favourite drink: seltzer");
+    // // let noteList = new NoteListModel();
+    // noteList.add(note1);
     this.view = new NoteListView(noteList);
     // return view.html();
   }
