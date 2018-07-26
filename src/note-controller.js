@@ -1,5 +1,6 @@
 (function(exports){
-  function NoteController(noteList = new NoteListModel()){
+  function NoteController(noteList){
+    var noteList = new NoteListModel()
     let note1 = new NoteModel("Favourite drink: seltzer");
     // let noteList = new NoteListModel();
     noteList.add(note1);
