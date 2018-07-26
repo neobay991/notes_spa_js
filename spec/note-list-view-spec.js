@@ -14,13 +14,13 @@
 
   function testHtmlListsMultipleNotes(){
     let note1 = new NoteModel('This is a test note.');
-    let note2 = new NoteModel('This is a test note 2');
+    let note2 = new NoteModel('This is a test note 2.');
     let noteList = new NoteListModel();
     noteList.add(note1);
     noteList.add(note2);
     let view = new NoteListView(noteList);
 
-    let expectedHtml = '<div><li>Note 1: This is a test note.</li></div><div><li>Note 2: This is a test note 2</li></div>'
+    let expectedHtml = '<div><li>Note 1: This is a test note.</li></div><div><li>Note 2: This is a test note </li></div>'
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (multiple).');
     } else {
