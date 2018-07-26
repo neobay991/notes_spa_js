@@ -1,8 +1,8 @@
 (function(exports){
   function testNoteController(){
-    let note1 = new NoteModel(1, "Favourite drink: seltzer1");
-    let note2 = new NoteModel(1, "Favourite drink: seltzer2");
-    let note3 = new NoteModel(1, "Favourite drink: seltzer3");
+    let note1 = new NoteModel("Favourite drink: seltzer1");
+    let note2 = new NoteModel("Favourite drink: seltzer2");
+    let note3 = new NoteModel("Favourite drink: seltzer3");
     var noteList = new NoteListModel();
     noteList.add(note1);
     noteList.add(note1);
