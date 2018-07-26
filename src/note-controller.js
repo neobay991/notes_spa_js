@@ -4,10 +4,8 @@
     let note1 = new NoteModel("Favourite drink: seltzer");
     // let noteList = new NoteListModel();
     noteList.add(note1);
-    let view = new NoteListView(noteList);
-    return view.html();
-    // html();
-
+    this.view = new NoteListView(noteList);
+    // return view.html();
   }
 
   // public method
@@ -15,12 +13,12 @@
     let appDiv = document.getElementById('app');
 
     // update index.html with what is returned from NoteController() function
-    appDiv.innerHTML = NoteController();
+    appDiv.innerHTML = this.view.html();
     return appDiv.innerHTML;
   }
 
   // invoke the method to return the html
-  NoteController.prototype.html();
+  // NoteController.prototype.html
 
   // make the constructor public for tests
   exports.NoteController = NoteController;
