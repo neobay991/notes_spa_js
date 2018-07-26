@@ -7,6 +7,8 @@
     let expectedHtml = '<div><li>Note 1: This is a test note.</li></div>';
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (single).');
+    } else {
+      console.log('OK: testHtmlListsSingleNote() unit test')
     }
   }
 
@@ -21,6 +23,8 @@
     let expectedHtml = '<div><li>Note 1: This is a test note.</li></div><div><li>Note 2: This is a test note 2</li></div>'
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (multiple).');
+    } else {
+      console.log('OK: testHtmlListsMultipleNotes() unit test')
     }
   }
 
@@ -30,6 +34,8 @@
     let expectedHtml = '';
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (no notes).');
+    } else {
+      console.log('OK: testHtmlDoesntListEmptyNote() unit test')
     }
   }
 

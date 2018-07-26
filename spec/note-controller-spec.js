@@ -6,6 +6,8 @@
     if(noteController.html() !== expectedHtml){
 
       throw new Error('HTML not what was expected.');
+    }  else {
+      console.log('OK: testNoteController() unit test')
     }
   }
   testNoteController();

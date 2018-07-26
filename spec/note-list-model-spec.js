@@ -8,7 +8,10 @@
     noteListModel.add(note2);
     if (!noteListModel.all().includes(note1) && !noteListModel.all().includes(note2)){
       throw new Error('Note does not appear in the list')
+    } else { 
+      console.log('OK: testNoteModelHoldsAListOfNotes() unit test')
     }
+
   }
   testNoteModelHoldsAListOfNotes();
 })(this);

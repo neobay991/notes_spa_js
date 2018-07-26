@@ -5,6 +5,8 @@
     let expectedHtml = '<li><div>This is a test note.</div></li>';
     if(view.html() !== expectedHtml){
       throw new Error('HTML not what was expected (single).');
+    } else {
+      console.log('OK: testHtmlSingleNote() unit test')
     }
   }
 
