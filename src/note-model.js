@@ -1,6 +1,12 @@
 (function(exports){
-  function NoteModel(note){
+  function NoteModel(id, note){
+    this.id = id;
     this.text = note;
+  }
+
+
+  NoteModel.prototype.noteId = function(){
+      return this.id;
   }
 
   NoteModel.prototype.noteText = function(){
