@@ -4,7 +4,7 @@
   }
 
   SingleNoteView.prototype.html = function(){
-    let output = `<li><div>${this.singleNote.noteText()}</div></li>`;
+    let output = `<div><li>${this.singleNote.noteText()}</li></div>`;
     return output
   };
 
